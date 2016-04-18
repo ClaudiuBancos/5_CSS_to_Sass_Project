@@ -1,0 +1,26 @@
+// Mixins go here.
+
+@mixin text ($size, $color: null, $weight: null) {
+	font-size: $size;
+	color: $color;
+	font-weight: $weight;
+}
+
+@mixin spacing ($mar-top: null, $mar-bot: null, $pad-top: null, $pad-bot: null) {
+	margin-top: $mar-top;
+	margin-bottom: $mar-bot;
+	padding-top: $pad-top;
+	padding-bottom: $pad-bot;
+}
+
+@mixin tablet {
+  @media (min-width: $break-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+	@media (min-width: $break-desktop) {
+		@content;
+	}
+}

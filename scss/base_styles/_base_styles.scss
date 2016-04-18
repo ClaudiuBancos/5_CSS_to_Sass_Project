@@ -1,0 +1,39 @@
+/**********************************
+BASE STYLES
+***********************************/
+
+body {
+	  font-family: $roboto_stack;
+	  background-color: $inner_background_color;
+
+	  @include desktop {
+	  	background-color: $outer_background_color;
+	  }
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	@extend %clear_margins_and_padding;
+}
+
+a {
+	text-decoration: none;
+	color: $inner_text_color;
+	font-weight: 500;
+}
+
+h1, h2 {
+	@extend %clear_margins_and_padding;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.4em;
+	margin-left: 10px;
+	margin-right: 10px;
+	@include spacing (18px, 0)
+}

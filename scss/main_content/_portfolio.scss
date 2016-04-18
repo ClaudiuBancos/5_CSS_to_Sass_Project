@@ -1,0 +1,106 @@
+/**********************************
+PORTFOLIO SECTION
+***********************************/
+
+.portfolio {
+	@extend %centered;
+	@extend %clearfix;
+	background-color: $inner_background_color;
+	width: (100%-(2*$outer_margin));
+	margin: $center_with_margins;
+	@include spacing($pad-bot: 20px);
+
+	@include tablet {
+		width: 90%;
+		@include spacing($pad-bot: 0);
+	}
+
+	@include desktop {
+		background-color: $inner_background_color;
+		width: 96%;
+	}
+
+	.section-title {
+		@include text($small_font_size);
+		@include spacing(0, 0, 47px, 47px);
+
+		@include tablet {
+			@include text(16px);
+		}
+
+		@include desktop {
+			@include text(16px, $weight: 700);
+		}
+	}
+
+	li {
+		@include tablet {
+			display: inline-block;
+			width: 49%;
+			@include spacing($mar-bot: 40px);
+		}
+
+		@include desktop {
+			display: inline-block;
+			width: 30.66666%;
+		}
+
+		&:nth-child(2n-1) {
+			@include tablet {
+				clear: both;
+				float: left;
+			}
+
+			@include desktop {
+				clear: none;
+			}
+		}
+
+		&:nth-child(2n) {
+			@include tablet {
+				float: right;
+			}
+
+			@include desktop {
+				float: left;
+			}
+		}
+
+		&:nth-child(3n+1) {
+			@include desktop {
+				clear: both;
+				float: left;
+				padding: 0 2%;
+			}
+		}
+
+		&:nth-child(3n) {
+			@include desktop {
+				padding: 0 2%;
+			}	
+		}
+	}
+}
+
+.project-title {
+	@include text ($large_font_size, $weight: 400);
+	@include spacing(25px);
+
+	@include tablet {
+		@include text(20px);
+	}
+
+	@include desktop {
+		@include text(21px);
+	}
+}
+
+.project-description {
+	@include spacing ($mar-bot: 40px);
+
+	@include tablet {
+		@include text($large_font_size);
+		margin-left: 9%;
+		margin-right: 9%;
+	}
+}

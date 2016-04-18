@@ -1,0 +1,80 @@
+/**********************************
+FOOTER
+***********************************/
+
+.footer-border-div {
+	border-top: 1px solid $inner_background_color;
+}
+
+footer {
+	@extend %clearfix;
+	background-color: $outer_background_color;
+	color: $outer_text_color;
+	padding-left: $outer_margin;
+	padding-right: $outer_margin;
+	@include spacing (0, 0, 10px, 10px);
+}
+
+.footer-nav {
+	display: none;
+	@extend %footer_text;
+
+	@include tablet {
+		display: block;
+		float: right;
+	}
+
+	a {
+		color: $outer_text_color;
+
+		&:hover {
+			color: $inner_text_color;
+		}
+	}
+
+	li {
+		@include tablet {
+			display: inline-block;
+			@include text($small_font_size, $weight: 900);
+			padding-left: 5px;
+			padding-right: 5px;
+			@include spacing(0, 0, 5px, 5px);
+		}
+
+		@include desktop {
+			font-weight: 900;
+			padding-left: 20px;
+			padding-right: 20px;
+			@include spacing(0, 0, 10px, 10px);
+		}
+	}
+}
+
+.footer-name {
+	@extend %footer_text;
+	@include text($small_font_size);
+	float: left;
+
+	@include tablet {
+		@include text(17px);
+		@include spacing($pad-top: 45px);
+	}
+
+	@include desktop {
+		@include text($large_font_size);
+	}
+}
+
+.back-to-top {
+	@extend %footer_text;
+	@include text(12px);
+	float: right;
+
+	@include tablet {
+		display: none;
+	}
+
+	&:hover {
+		color: $inner_text_color;
+	}
+}

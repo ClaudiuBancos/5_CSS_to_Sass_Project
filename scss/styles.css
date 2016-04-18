@@ -1,0 +1,398 @@
+header, .intro, .portfolio, .contact {
+  text-align: center; }
+
+ul, h1, h2 {
+  margin: 0;
+  padding: 0; }
+
+/**********************************
+CLEARFIX
+***********************************/
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+header:before, .main-nav a:before, .about:before, .portfolio:before, footer:before {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+header:after, .main-nav a:after, .about:after, .portfolio:after, footer:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+  clear: both; }
+
+/**********************************
+BASE STYLES
+***********************************/
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white; }
+  @media (min-width: 1024px) {
+    body {
+      background-color: darkslategrey; } }
+
+img {
+  max-width: 100%; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500; }
+
+p {
+  font-weight: 300;
+  line-height: 1.4em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 18px;
+  margin-bottom: 0; }
+
+/**********************************
+HEADER AND NAVIGATION
+***********************************/
+header {
+  background-color: darkslategrey; }
+  @media (min-width: 768px) {
+    header {
+      padding-bottom: 40px; } }
+  @media (min-width: 1024px) {
+    header {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 10px;
+      padding-bottom: 20px; } }
+
+.name {
+  font-family: "Cantarell", sans-serif;
+  font-size: 30px;
+  color: honeydew;
+  font-weight: 900;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 15px; }
+  @media (min-width: 768px) {
+    .name {
+      color: white;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 40px; } }
+  @media (min-width: 1024px) {
+    .name {
+      font-size: 28px;
+      float: left;
+      padding-left: 5%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 28px;
+      padding-bottom: 19px; } }
+
+.nav-toggle {
+  height: 5vh; }
+  @media (min-width: 768px) {
+    .nav-toggle {
+      display: none; } }
+
+@media (min-width: 1024px) {
+  .main-nav {
+    float: right;
+    text-align: right;
+    min-width: 50%;
+    max-width: 60%;
+    padding-right: 5%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 19px;
+    padding-bottom: 15px; } }
+@media (min-width: 1024px) {
+  .main-nav h2 {
+    font-size: 16px;
+    font-weight: 900; } }
+.main-nav a {
+  display: block;
+  background: white;
+  font-size: 9px;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-top: 11px;
+  padding-bottom: 11px; }
+  @media (min-width: 768px) {
+    .main-nav a {
+      background-color: #fafafa; } }
+.main-nav ul {
+  margin-top: 0;
+  margin-bottom: 20px; }
+@media (min-width: 768px) {
+  .main-nav li {
+    display: inline-block;
+    width: 11%;
+    text-align: center; } }
+@media (min-width: 1024px) {
+  .main-nav li {
+    width: 20%; } }
+
+/**********************************
+ABOUT SECTION
+***********************************/
+.about {
+  background-color: darkslategrey;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  padding-left: 5%;
+  padding-right: 5%; }
+  @media (min-width: 768px) {
+    .about {
+      padding-top: 0; } }
+
+.about-header {
+  display: none; }
+
+.profile-picture {
+  display: block;
+  width: 55%;
+  margin: 0 auto;
+  padding-bottom: 10px; }
+  @media (min-width: 768px) {
+    .profile-picture {
+      float: right;
+      max-width: 40%;
+      margin-right: 30px;
+      margin-left: 40px;
+      padding-bottom: 30px; } }
+  @media (min-width: 1024px) {
+    .profile-picture {
+      max-width: 35%;
+      margin-right: 0;
+      padding-right: 0; } }
+
+.intro {
+  font-size: 18px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 10px; }
+  @media (min-width: 768px) {
+    .intro {
+      text-align: left;
+      font-size: 20px;
+      margin-top: 0; } }
+  @media (min-width: 1024px) {
+    .intro {
+      font-size: 22px; } }
+
+/**********************************
+PORTFOLIO SECTION
+***********************************/
+.portfolio {
+  background-color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px; }
+  @media (min-width: 768px) {
+    .portfolio {
+      width: 90%;
+      padding-bottom: 0; } }
+  @media (min-width: 1024px) {
+    .portfolio {
+      background-color: white;
+      width: 96%; } }
+  .portfolio .section-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 47px;
+    padding-bottom: 47px; }
+    @media (min-width: 768px) {
+      .portfolio .section-title {
+        font-size: 16px; } }
+    @media (min-width: 1024px) {
+      .portfolio .section-title {
+        font-size: 16px;
+        font-weight: 700; } }
+  @media (min-width: 768px) {
+    .portfolio li {
+      display: inline-block;
+      width: 49%;
+      margin-bottom: 40px; } }
+  @media (min-width: 1024px) {
+    .portfolio li {
+      display: inline-block;
+      width: 30.66666%; } }
+  @media (min-width: 768px) {
+    .portfolio li:nth-child(2n-1) {
+      clear: both;
+      float: left; } }
+  @media (min-width: 1024px) {
+    .portfolio li:nth-child(2n-1) {
+      clear: none; } }
+  @media (min-width: 768px) {
+    .portfolio li:nth-child(2n) {
+      float: right; } }
+  @media (min-width: 1024px) {
+    .portfolio li:nth-child(2n) {
+      float: left; } }
+  @media (min-width: 1024px) {
+    .portfolio li:nth-child(3n+1) {
+      clear: both;
+      float: left;
+      padding: 0 2%; } }
+  @media (min-width: 1024px) {
+    .portfolio li:nth-child(3n) {
+      padding: 0 2%; } }
+
+.project-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 25px; }
+  @media (min-width: 768px) {
+    .project-title {
+      font-size: 20px; } }
+  @media (min-width: 1024px) {
+    .project-title {
+      font-size: 21px; } }
+
+.project-description {
+  margin-bottom: 40px; }
+  @media (min-width: 768px) {
+    .project-description {
+      font-size: 18px;
+      margin-left: 9%;
+      margin-right: 9%; } }
+
+.footer-nav, .footer-name, .back-to-top {
+  color: white;
+  font-weight: 800;
+  padding: 20px 0; }
+
+/**********************************
+CONTACT SECTION
+***********************************/
+.contact {
+  background-color: darkslategrey;
+  color: white;
+  padding-bottom: 60px; }
+  .contact .section-title {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 70px;
+    padding-bottom: 20px; }
+    @media (min-width: 768px) {
+      .contact .section-title {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 60px;
+        font-size: 16px;
+        font-weight: 900; } }
+    @media (min-width: 1024px) {
+      .contact .section-title {
+        font-size: 16px;
+        font-weight: 700; } }
+
+.contact-blurb {
+  font-size: 18px;
+  margin-left: 5%;
+  margin-right: 5%; }
+  @media (min-width: 768px) {
+    .contact-blurb {
+      font-size: 22px;
+      margin-left: 17%;
+      margin-right: 17%;
+      margin-top: 25px;
+      margin-bottom: 25px; } }
+  @media (min-width: 1024px) {
+    .contact-blurb {
+      margin-left: 25%;
+      margin-right: 25%; } }
+
+.contact-links {
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    .contact-links {
+      margin-top: 60px; } }
+  .contact-links a {
+    color: white;
+    margin-left: 10px; }
+
+/**********************************
+FOOTER
+***********************************/
+.footer-border-div {
+  border-top: 1px solid white; }
+
+footer {
+  background-color: darkslategrey;
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.footer-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    .footer-nav {
+      display: block;
+      float: right; } }
+  .footer-nav a {
+    color: white; }
+    .footer-nav a:hover {
+      color: black; }
+  @media (min-width: 768px) {
+    .footer-nav li {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 900;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 5px;
+      padding-bottom: 5px; } }
+  @media (min-width: 1024px) {
+    .footer-nav li {
+      font-weight: 900;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-top: 10px;
+      padding-bottom: 10px; } }
+
+.footer-name {
+  font-size: 14px;
+  float: left; }
+  @media (min-width: 768px) {
+    .footer-name {
+      font-size: 17px;
+      padding-top: 45px; } }
+  @media (min-width: 1024px) {
+    .footer-name {
+      font-size: 18px; } }
+
+.back-to-top {
+  font-size: 12px;
+  float: right; }
+  @media (min-width: 768px) {
+    .back-to-top {
+      display: none; } }
+  .back-to-top:hover {
+    color: black; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,32 @@
+//COLORS
+
+$outer_background_color	:	darkslategrey;
+$inner_background_color	:	white;
+
+$name_text_color		:	honeydew;
+$outer_text_color		:	white;
+$inner_text_color		:	black;
+$special_off_white		:	#fafafa;
+ 
+
+
+//FONTS AND FONT SIZES
+
+$cantarell_stack		:	'Cantarell', sans-serif;
+$roboto_stack			:	'Roboto', sans-serif;
+$large_font_size		:	18px;	// About p, contact p, and portfolio titles
+$small_font_size		:	14px;	// Section titles
+
+
+
+//MARGINS
+
+$outer_margin			:	5%;
+$center_with_margins	:	0 auto;
+
+
+
+//MEDIA QUERY BREAKPOINTS
+
+$break-tablet			:	768px;
+$break-desktop			:	1024px;

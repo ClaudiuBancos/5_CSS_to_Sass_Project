@@ -1,0 +1,90 @@
+/**********************************
+HEADER AND NAVIGATION
+***********************************/
+
+header {
+	@extend %clearfix;
+	@extend %centered;
+	background-color: $outer_background_color;
+
+	@include tablet {
+		@include spacing ($pad-bot: 40px);
+	}
+
+	@include desktop {
+		@include spacing (0, 0, 10px, 20px);
+	}
+}
+
+.name {
+	font-family: $cantarell_stack;
+	@include text(30px, $name_text_color, 900);
+	@include spacing(0, 0, 20px, 15px);
+
+	@include tablet {
+		color: $outer_text_color;
+		@include spacing(0, 0, 40px);
+	}
+
+	@include desktop {
+		@include text (28px);
+		float: left;
+		padding-left: $outer_margin;
+		@include spacing(0, 0, 28px, 19px);
+	}
+}
+
+.nav-toggle {
+	height: 5vh;
+
+	@include tablet {
+		display: none;
+	}
+}
+
+.main-nav {
+	@include desktop {
+		float: right;
+		text-align: right;
+		min-width: 50%;
+		max-width: 60%;
+		padding-right: $outer_margin;
+		@include spacing (0, 0, 19px, 15px);	
+	}
+
+	h2 {
+		@include desktop {
+			@include text(16px, $weight: 900);
+		}
+	}
+
+	a {
+		@extend %clearfix;
+		display: block;
+		background: $inner_background_color;
+		@include text(9px);
+		width: (100%-(2*$outer_margin));
+		margin: $center_with_margins;
+		@include spacing(8px, 0, 11px, 11px);
+
+		@include tablet {
+			background-color: $special_off_white;
+		}
+	}
+
+	ul {
+		@include spacing(0, 20px);
+	}
+
+	li {
+		@include tablet {
+			display: inline-block;
+			width: 11%;
+			text-align: center;
+		}
+
+		@include desktop {
+			width: 20%;
+		}
+	}
+}

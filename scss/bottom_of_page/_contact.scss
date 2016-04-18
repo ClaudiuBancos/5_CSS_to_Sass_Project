@@ -1,0 +1,55 @@
+/**********************************
+CONTACT SECTION
+***********************************/
+
+.contact {
+	@extend %centered;
+	background-color: $outer_background_color;
+	color: $outer_text_color;
+	@include spacing ($pad-bot: 60px);
+
+	.section-title {
+		@include text($small_font_size);
+		@include spacing(0, 0, 70px, 20px);
+
+		@include tablet {
+			@include spacing(0, 0, 60px);
+			@include text(16px, $weight: 900);
+		}
+
+		@include desktop {
+			@include text(16px, $weight: 700);
+		}
+	}
+}
+
+.contact-blurb {
+	@include text($large_font_size);
+	margin-left: $outer_margin;
+	margin-right: $outer_margin;
+
+	@include tablet {
+		@include text(22px);
+		margin-left: 17%;
+		margin-right: 17%;
+		@include spacing(25px, 25px);
+	}
+
+	@include desktop {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+}
+
+.contact-links {
+	@include spacing($mar-top: 30px);
+
+	@include tablet {
+		@include spacing(60px);
+	}
+	
+	a {
+		color: $outer_text_color;
+		margin-left: 10px;
+	}
+}

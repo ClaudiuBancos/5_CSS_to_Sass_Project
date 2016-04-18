@@ -1,0 +1,204 @@
+/**********************************
+TABLET STYLES
+***********************************/
+@media (min-width: 768px) {
+  /*~~~~~~~~~~~~~~~~~~~
+  HEADER AND NAVIGATION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  header {
+    padding-bottom: 60px; }
+
+  .name {
+    color: white;
+    padding: 40px 0 15px; }
+
+  .main-nav li {
+    display: inline-block;
+    width: 11%;
+    text-align: center; }
+
+  .main-nav a {
+    background-color: #fafafa; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  ABOUT SECTION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .about {
+    padding-top: 0; }
+
+  .profile-picture {
+    float: right;
+    max-width: 40%;
+    margin-right: 30px;
+    margin-left: 40px;
+    padding-bottom: 30px; }
+
+  .intro {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 0; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  PORTFOLIO SECTION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .portfolio {
+    width: 90%;
+    padding-bottom: 0; }
+
+  .portfolio .section-title {
+    font-size: 16px; }
+
+  .project-title {
+    font-size: 20px; }
+
+  .project-description {
+    font-size: 18px;
+    margin-left: 9%;
+    margin-right: 9%; }
+
+  .portfolio li {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 40px; }
+
+  .portfolio li:nth-child(2n-1) {
+    clear: both;
+    float: left; }
+
+  .portfolio li:nth-child(2n) {
+    float: right; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  CONTACT SECTION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .contact .section-title {
+    padding-top: 60px;
+    font-size: 16px;
+    font-weight: 900; }
+
+  .contact-blurb {
+    font-size: 22px;
+    margin: 25px 17%; }
+
+  .contact-links {
+    margin-top: 60px; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  FOOTER
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .footer-name {
+    font-size: 17px; }
+
+  .back-to-top {
+    display: none; }
+
+  .footer-nav {
+    display: block;
+    float: right; }
+
+  .footer-nav li {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 900;
+    padding: 5px; } }
+/**********************************
+DESKTOP STYLES
+***********************************/
+@media (min-width: 1024px) {
+  /*~~~~~~~~~~~~~~~~~~~
+  HEADER AND NAVIGATION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  header {
+    padding-top: 10px;
+    padding-bottom: 20px; }
+
+  .name {
+    font-size: 28px;
+    font-weight: 900;
+    float: left;
+    padding: 28px 0 19px 5%; }
+
+  .main-nav li {
+    width: 20%; }
+
+  .main-nav {
+    float: right;
+    text-align: right;
+    padding: 19px 4% 15px 0;
+    min-width: 50%;
+    max-width: 60%; }
+
+  .main-nav h2 {
+    font-size: 16px;
+    font-weight: 900; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  ABOUT SECTION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .profile-picture {
+    max-width: 35%;
+    margin-right: 0;
+    padding-right: 5%; }
+
+  .intro {
+    font-size: 22px; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  PORTFOLIO SECTION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  body {
+    background-color: darkslategrey; }
+
+  .portfolio {
+    background-color: white;
+    width: 96%; }
+
+  .portfolio li {
+    display: inline-block;
+    width: 30.66666%;
+    margin-bottom: 40px; }
+
+  .portfolio li:nth-child(2n-1) {
+    clear: none; }
+
+  .portfolio li:nth-child(2n) {
+    float: left; }
+
+  .portfolio li:nth-child(3n+1) {
+    clear: both;
+    float: left;
+    padding: 0 2%; }
+
+  .portfolio li:nth-child(3n) {
+    padding: 0 2%; }
+
+  .portfolio .section-title {
+    font-size: 16px;
+    font-weight: 700; }
+
+  .project-title {
+    font-size: 21px; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  CONTACT SECTION
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .contact .section-title {
+    font-size: 16px;
+    font-weight: 700; }
+
+  .contact-blurb {
+    font-size: 22px;
+    margin: 25px 29%; }
+
+  /*~~~~~~~~~~~~~~~~~~~
+  FOOTER
+  ~~~~~~~~~~~~~~~~~~~~*/
+  .footer-name {
+    padding: 24px 0 0;
+    font-size: 18px; }
+
+  .footer-nav li {
+    font-weight: 900;
+    padding: 10px 20px; } }
+
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,57 @@
+/**********************************
+ABOUT SECTION
+***********************************/
+
+.about {
+	@extend %clearfix;
+	background-color: $outer_background_color;
+	@include spacing(0, 0, 20px, 40px);
+	padding-left: $outer_margin;
+	padding-right: $outer_margin;
+
+	@include tablet {
+		@include spacing($pad-top: 0);
+	}
+}
+
+.about-header {
+	display: none;
+}
+
+.profile-picture {
+	display: block;
+	width: 55%;
+	margin: $center_with_margins;
+	@include spacing($pad-bot: 10px);
+
+	@include tablet {
+		float: right;
+		max-width: 40%;
+		margin-right: 30px;
+		margin-left: 40px;
+		@include spacing($pad-bot: 30px);
+	}
+
+	@include desktop {
+		max-width: 35%;
+		margin-right: 0;
+		padding-right: 0;
+	}
+}
+
+.intro {
+	@extend %centered;
+	@include text($large_font_size, $outer_text_color);
+	margin: $center_with_margins;
+	@include spacing(10px);
+
+	@include tablet {
+		text-align: left;
+		@include text(20px);
+		@include spacing(0);
+	}
+
+	@include desktop {
+		@include text(22px);
+	}
+}

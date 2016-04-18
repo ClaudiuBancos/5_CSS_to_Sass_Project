@@ -1,0 +1,230 @@
+/**********************************
+GENERAL STYLES
+***********************************/
+
+body {
+	  font-family: 'Roboto', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	font-weight: 500;
+}
+
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-weight: 300;
+	line-height: 1.4em;
+	margin: 18px 10px 0;
+}
+
+.about-header {
+	display: none;
+}
+
+header,
+.about,
+.contact,
+footer {
+	background-color: darkslategrey;
+}
+
+.portfolio {
+	background-color: white;
+}
+
+
+
+/**********************************
+HEADER AND NAVIGATION
+***********************************/
+
+header {
+	text-align: center;
+}
+
+.name {
+	font-family: 'Cantarell', sans-serif;
+	color: honeydew;
+	font-size: 30px;
+	font-weight: 900;
+	padding: 20px 0 15px;
+}
+
+.main-nav a {
+	display: block;
+	background: white;
+	font-size: 9px;
+	width: 90%;
+	margin: 8px auto 0;
+	padding: 11px 0;
+}
+
+
+
+/**********************************
+ABOUT SECTION
+***********************************/
+
+.about {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.profile-picture {
+	display: block;
+	width: 55%;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+.intro {
+	color: white;
+	text-align: center;
+	margin: 20px 5% 0;
+	font-size: 18px;
+}
+
+
+
+/**********************************
+PORTFOLIO SECTION
+***********************************/
+
+.portfolio {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.portfolio .section-title {
+	font-size: 14px;
+	padding: 47px 0;
+}
+
+.project-title {
+	font-size: 18px;
+	font-weight: 400;
+	margin-top: 25px;
+}
+
+.project-description {
+	margin-bottom: 40px;
+}
+
+
+
+/**********************************
+CONTACT SECTION
+***********************************/
+
+.contact {
+	color: white;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.contact .section-title {
+	font-size: 14px;
+	padding: 70px 0 20px;
+}
+
+.contact-blurb {
+	font-size: 17px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.contact-links {
+	margin-top: 30px;
+}
+
+.contact-links a {
+	color: white;
+	margin-left: 10px;
+}
+
+
+
+/**********************************
+FOOTER
+***********************************/
+
+.footer-border-div {
+	border-top: 1px solid darkgrey;
+}
+
+footer {
+	color: white;
+	padding: 10px 5% 10px;
+}
+
+.footer-nav {
+	display: none;
+}
+
+.footer-nav a {
+	color: white;
+}
+
+.footer-name,
+.back-to-top {
+	font-weight: 800;
+	padding: 20px 0;
+}
+
+.footer-name {
+	font-size: 14px;
+	float: left;
+}
+
+.back-to-top {
+	font-size: 12px;
+	float: right;
+
+}
+
+
+
+
+
+
+
+/**********************************
+CLEARFIX
+***********************************/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
