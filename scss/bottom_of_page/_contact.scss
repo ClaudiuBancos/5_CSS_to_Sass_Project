@@ -14,11 +14,11 @@ CONTACT SECTION
 
 		@include tablet {
 			@include spacing(0, 0, 60px);
-			@include text(16px, $weight: 900);
+			@include text($medium_font_size, $weight: 900);
 		}
 
 		@include desktop {
-			@include text(16px, $weight: 700);
+			@include text($medium_font_size, $weight: 700);
 		}
 	}
 }
@@ -29,7 +29,7 @@ CONTACT SECTION
 	margin-right: $outer_margin;
 
 	@include tablet {
-		@include text(22px);
+		@include text($intro_desktop_and_contact_tablet);
 		margin-left: 17%;
 		margin-right: 17%;
 		@include spacing(25px, 25px);

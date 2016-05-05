@@ -25,11 +25,11 @@ PORTFOLIO SECTION
 		@include spacing(0, 0, 47px, 47px);
 
 		@include tablet {
-			@include text(16px);
+			@include text($medium_font_size);
 		}
 
 		@include desktop {
-			@include text(16px, $weight: 700);
+			@include text($medium_font_size, $weight: 700);
 		}
 	}
 
@@ -87,11 +87,11 @@ PORTFOLIO SECTION
 	@include spacing(25px);
 
 	@include tablet {
-		@include text(20px);
+		@include text($intro_and_project_titles_tablet);
 	}
 
 	@include desktop {
-		@include text(21px);
+		@include text($project_titles_desktop);
 	}
 }
 

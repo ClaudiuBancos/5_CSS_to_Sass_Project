@@ -15,7 +15,17 @@ $special_off_white		:	#fafafa;
 $cantarell_stack		:	'Cantarell', sans-serif;
 $roboto_stack			:	'Roboto', sans-serif;
 $large_font_size		:	18px;	// About p, contact p, and portfolio titles
+$medium_font_size		:	16px;	// Section titles on desktop. Also main-nav on desktop.
 $small_font_size		:	14px;	// Section titles
+
+// The font-size variables below exist only to fulfil project requirements. Each one is either used only once (and so it makes sense to just change the font-size for it individually without a variable), or else is used to style elements that are completely unrelated to each other (meaning when someone inevitably wants to change one but not the other, it'll be more of a hassle then it should). Thus, these variables probably make the code harder to maintain instead of easier. But hey, project requirements, right?
+
+$nav_links_mobile_size	:	9px;	// Nav links on mobile
+$intro_and_project_titles_tablet		:	20px;	// Intro on tablet. Also, completely unrelated to that, project titles in the portfolio on tablet.
+$project_titles_desktop	:	21px;	// Project titles on desktop.
+$intro_desktop_and_contact_tablet		:	22px;	// Intro on desktop. Also, completely unrelated to that, contact on tablet.
+$name_desktop_size		:	28px;	// Name on deskptop
+$name_mobile_size		:	30px;	// Name on mobile
 
 
 

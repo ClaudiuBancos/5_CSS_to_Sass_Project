@@ -47,11 +47,11 @@ ABOUT SECTION
 
 	@include tablet {
 		text-align: left;
-		@include text(20px);
+		@include text($intro_and_project_titles_tablet);
 		@include spacing(0);
 	}
 
 	@include desktop {
-		@include text(22px);
+		@include text($intro_desktop_and_contact_tablet);
 	}
 }

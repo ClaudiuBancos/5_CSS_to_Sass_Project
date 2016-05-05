@@ -18,7 +18,7 @@ header {
 
 .name {
 	font-family: $cantarell_stack;
-	@include text(30px, $name_text_color, 900);
+	@include text($name_mobile_size, $name_text_color, 900);
 	@include spacing(0, 0, 20px, 15px);
 
 	@include tablet {
@@ -27,7 +27,7 @@ header {
 	}
 
 	@include desktop {
-		@include text (28px);
+		@include text ($name_desktop_size);
 		float: left;
 		padding-left: $outer_margin;
 		@include spacing(0, 0, 28px, 19px);
@@ -54,7 +54,7 @@ header {
 
 	h2 {
 		@include desktop {
-			@include text(16px, $weight: 900);
+			@include text($medium_font_size, $weight: 900);
 		}
 	}
 
@@ -62,7 +62,7 @@ header {
 		@extend %clearfix;
 		display: block;
 		background: $inner_background_color;
-		@include text(9px);
+		@include text($nav_links_mobile_size);
 		width: (100%-(2*$outer_margin));
 		margin: $center_with_margins;
 		@include spacing(8px, 0, 11px, 11px);
